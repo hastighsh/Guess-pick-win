@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    // game name
+    <TextView
+        android:id="@+id/gameName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="36dp"
+        android:text="@string/guess_pick_win"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    //game info
+    <TextView
+        android:id="@+id/infoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gameName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="80dp"
+        android:text="@string/pick_a_level_to_start_the_game"
+        android:gravity="center"/>
+
+    //easy lvl button
+
+    <Button
+        android:id="@+id/easylvl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/infoText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="150dp"
+        android:background="@drawable/button_style"
+        android:text="@string/easy" />
+
+    //medium lvl button
+    <Button
+        android:id="@+id/mediumlvl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/easylvl"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="150dp"
+        android:text="@string/medium"
+        android:background="@drawable/button_style"/>
+
+    //hard lvl button
+    <Button
+        android:id="@+id/hardlvl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mediumlvl"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="150dp"
+        android:text="@string/hard"
+        android:background="@drawable/button_style"/>
+
+    <TableLayout
+        android:id="@+id/scoreBoardTable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/hardlvl"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/tableborder"
+        android:stretchColumns="*">
+
+        //row 1, 0 columns
+        <TableRow
+            android:id="@+id/row1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/score_board"/>
+        </TableRow>
+
+        //row 2, 2 columns
+        <TableRow
+            android:id="@+id/row2"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="@string/name"
+                android:paddingRight="18dip"
+                android:paddingLeft="18dip"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="@string/score"
+                android:paddingRight="18dip"
+                android:paddingLeft="18dip"/>
+        </TableRow>
+
+        //row 3, 2 columns
+        <TableRow
+            android:id="@+id/row3"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="8dp"/>
+        </TableRow>
+
+        //row 4, 2 column
+        <TableRow
+            android:id="@+id/row4"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="8dp"/>
+        </TableRow>
+
+        //row 5, 2 column
+        <TableRow
+            android:id="@+id/row5"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="8dp"/>
+        </TableRow>
+
+        //row 6, 2 column
+        <TableRow
+            android:id="@+id/row6"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="8dp"/>
+        </TableRow>
+
+        //row 7, 2 column
+        <TableRow
+            android:id="@+id/row7"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="8dp"/>
+        </TableRow>
+
+        //row 8, 2 column
+        <TableRow
+            android:id="@+id/row8"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="8dp"/>
+        </TableRow>
+    </TableLayout>
+
+
+</RelativeLayout>

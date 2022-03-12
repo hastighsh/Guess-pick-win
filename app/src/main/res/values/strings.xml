@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Guess-pick-win</string>
+    <string name="score_board">SCORE-BOARD</string>
+    <string name="name">NAME</string>
+    <string name="score">SCORE</string>
+    <string name="guess_pick_win">GUESS, PICK, WIN!</string>
+    <string name="pick_a_level_to_start_the_game">PICK A LEVEL TO START THE GAME</string>
+    <string name="easy">EASY</string>
+    <string name="medium">MEDIUM</string>
+    <string name="hard">HARD</string>
+    <string name="_0">0</string>
+    <string name="enter_your_answer_here">enter your answer here</string>
+    <string name="guess_the_number_here">Guess the number here!</string>
+    <string name="check">check</string>
+    <string name="guess">GUESS</string>
+    <string name="menu">MENU</string>
+    <string name="hint">HINT</string>
+    <string name="x">X</string>
+    <string name="main_menu">MAIN MENU</string>
+    <string name="change_the_difficulty_level">CHANGE THE DIFFICULTY LEVEL</string>
+    <string name="ok">Ok</string>
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText">
+
+    //cancel btn
+    <Button
+        android:id="@+id/cancelbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
+        android:padding="10dp"
+        android:text="@string/x"
+        android:textSize="30sp"
+        android:background="@drawable/button_style"/>
+
+    //main menu button
+
+    <Button
+        android:id="@+id/mainMenubtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/button_style"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/main_menu"
+        android:textSize="40sp" />
+
+    //change level info
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainMenubtn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/change_the_difficulty_level"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="20sp" />
+
+    //easy button
+
+    <Button
+        android:id="@+id/easylvl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/button_style"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/easy"
+        android:textAlignment="center"
+        android:textSize="40sp" />
+
+    //medium button
+
+    <Button
+        android:id="@+id/mediumlvl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/easylvl"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/button_style"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/medium"
+        android:textAlignment="center"
+        android:textSize="40sp" />
+
+    //hard button
+
+    <Button
+        android:id="@+id/hardlvl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mediumlvl"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/button_style"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/hard"
+        android:textAlignment="center"
+        android:textSize="40sp" />
+
+
+
+
+</RelativeLayout>
