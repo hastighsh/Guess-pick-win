@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="400dp"
+    android:layout_height="500dp"
+
     tools:ignore="ExtraText">
 
     //cancel btn
+
     <Button
         android:id="@+id/cancelbtn"
         android:layout_width="wrap_content"
@@ -14,12 +16,13 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="300dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20sp"
         android:layout_marginEnd="50dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/button_style"
         android:padding="10dp"
         android:text="@string/x"
-        android:textSize="30sp"
-        android:background="@drawable/button_style"/>
+        android:textSize="10sp" />
 
     //main menu button
 
@@ -27,17 +30,17 @@
         android:id="@+id/mainMenubtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/cancelbtn"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginEnd="60dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="120dp"
         android:background="@drawable/button_style"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:text="@string/main_menu"
-        android:textSize="40sp" />
+        android:textSize="20sp" />
 
     //change level info
 
@@ -49,7 +52,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:text="@string/change_the_difficulty_level"
         android:textAlignment="center"
@@ -65,15 +68,15 @@
         android:layout_below="@+id/textView"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="120dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="60dp"
+        android:layout_marginEnd="120dp"
         android:background="@drawable/button_style"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:text="@string/easy"
         android:textAlignment="center"
-        android:textSize="40sp" />
+        android:textSize="20sp" />
 
     //medium button
 
@@ -84,15 +87,15 @@
         android:layout_below="@+id/easylvl"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="120dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="60dp"
+        android:layout_marginEnd="120dp"
         android:background="@drawable/button_style"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:text="@string/medium"
         android:textAlignment="center"
-        android:textSize="40sp" />
+        android:textSize="20sp" />
 
     //hard button
 
@@ -103,15 +106,16 @@
         android:layout_below="@+id/mediumlvl"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="120dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="60dp"
+        android:layout_marginEnd="120dp"
+
         android:background="@drawable/button_style"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:text="@string/hard"
         android:textAlignment="center"
-        android:textSize="40sp" />
+        android:textSize="20sp" />
 
 
 
