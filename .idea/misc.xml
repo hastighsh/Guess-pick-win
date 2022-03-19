@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Mahdi/Documents/GitHub/Guess-pick-win/app/src/main/res/layout/activity_game_screen.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Mahdi/Documents/GitHub/Guess-pick-win/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Mahdi/Documents/GitHub/Guess-pick-win/app/src/main/res/layout/announcement_popup.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Mahdi/Documents/GitHub/Guess-pick-win/app/src/main/res/layout/hint_popup.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Mahdi/Documents/GitHub/Guess-pick-win/app/src/main/res/layout/menu_popup.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/hasti/AndroidStudioProjects/Guesspickwin/app/src/main/res/drawable/border.xml" value="0.1785" />
         <entry key="..\:/Users/hasti/AndroidStudioProjects/Guesspickwin/app/src/main/res/drawable/button_style.xml" value="0.1785" />
         <entry key="..\:/Users/hasti/AndroidStudioProjects/Guesspickwin/app/src/main/res/drawable/tableborder.xml" value="0.1785" />
