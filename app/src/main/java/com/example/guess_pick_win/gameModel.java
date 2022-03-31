@@ -7,13 +7,21 @@ import java.util.*;
 public class gameModel {
     private String name;
     private int score, difficulty, lifeLeft, max, number;
-    private HashSet<Player> leaderboardList;
+    private final HashSet<Player> leaderboardList;
     private int[] pastGuesses;
 
     /*
      accepts an integer between 1-3.
      1=easy, 2=medium, 3=hard
      */
+    public gameModel(){
+        this.difficulty= 0;
+        this.name = "";
+        this.max = 0;
+        this.score = 0;
+        this.leaderboardList = new HashSet<>();
+    }
+
     public gameModel(int difficulty,String name,int max){
         this.difficulty=difficulty;
         this.name=name;

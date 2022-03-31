@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -30,7 +31,12 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
+                //what is max???
+                int max = 0;
+                EditText playerName = (EditText) findViewById(R.id.nameBox);
+                String name = playerName.getText().toString();
                 openGameScreen();
+                gameModel diff = new gameModel(1, name, max);
             }
         });
 
@@ -39,7 +45,12 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
+                //what is max????
+                int max = 0;
+                EditText playerName = (EditText) findViewById(R.id.nameBox);
+                String name = playerName.getText().toString();
                 openGameScreen();
+                gameModel diff = new gameModel(2, name, max);
             }
         });
 
@@ -48,7 +59,12 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
+                //what is max???
+                int max = 0;
+                EditText playerName = (EditText) findViewById(R.id.nameBox);
+                String name = playerName.getText().toString();
                 openGameScreen();
+                gameModel diff = new gameModel(3, name, max);
             }
         });
     }

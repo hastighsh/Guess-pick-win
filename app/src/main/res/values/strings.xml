@@ -19,4 +19,6 @@
     <string name="main_menu">MAIN MENU</string>
     <string name="change_the_difficulty_level">CHANGE THE DIFFICULTY LEVEL</string>
     <string name="ok">Ok</string>
+    <string name="enter_your_name_here">ENTER YOUR NAME HERE</string>
+    <string name="player">PLAYER</string>
 </resources>
