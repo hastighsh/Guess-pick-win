@@ -1,11 +1,14 @@
 package com.example.guess_pick_win;
 
+import java.io.*;
+import java.util.*;
+
 // the model of the project
 public class gameModel {
     private String name;
     private int score, difficulty, lifeLeft, max, number;
-    private String[] leaderboardNames;
-    private int[] leaderboardScores, pastGuesses;
+    private HashSet<Player> leaderboardList;
+    private int[] pastGuesses;
 
     /*
      accepts an integer between 1-3.
@@ -16,6 +19,7 @@ public class gameModel {
         this.name=name;
         this.max=max;
         this.score=0;
+        this.leaderboardList = new HashSet<>();
         //pastGuesses=new int[0];
 
 
@@ -60,6 +64,8 @@ public class gameModel {
 
 
 
+
+
     public String getName(){
         return this.name;
     }
@@ -79,5 +85,33 @@ public class gameModel {
     public int getMax(){
         return this.max;
     }
+
+
+
+    public void setNewLeaderboardScore(){
+        this.leaderboardList.add(new Player(this.name,this.score));
+    }
+
+    public List<Player> getLeaderboard(){
+        List<Player> leaderboard = new ArrayList<>();
+        leaderboard.addAll(this.leaderboardList);
+        Collections.sort(leaderboard);
+        Collections.reverse(leaderboard);
+        return leaderboard;
+    }
+    public Player getLeaderboard(int position){
+        List<Player> leaderboard = new ArrayList<>();
+        leaderboard.addAll(this.leaderboardList);
+        Collections.sort(leaderboard);
+        Collections.reverse(leaderboard);
+        return leaderboard.get(position);
+
+    }
+
+    //for test only
+    public void setScore(int score) {
+        this.score = score;
+    }
+    //////
 
 }
