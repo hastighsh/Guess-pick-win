@@ -3,9 +3,12 @@ package com.example.guess_pick_win;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import org.w3c.dom.Text;
 
 public class HintPopup extends AppCompatActivity
 {
@@ -14,6 +17,13 @@ public class HintPopup extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hint_popup);
+
+        String num = getIntent().getStringExtra("num"); // saba
+       String result = Hint.hint(num);// saba
+
+        TextView testView = findViewById(R.id.hintBox); //saba
+        testView.setText(result);// saba
+
 
         Button okBtn = (Button) findViewById(R.id.okBtn);
         okBtn.setOnClickListener(new View.OnClickListener()

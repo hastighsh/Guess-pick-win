@@ -22,6 +22,7 @@ public class gameScreen extends AppCompatActivity {
 
     public void openHintPopup() {
         Intent b = new Intent(this, HintPopup.class);
+        b.putExtra("num", 10);// saba
         startActivity(b);
     }
 
