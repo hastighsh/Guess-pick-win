@@ -21,7 +21,7 @@ public class ExampleUnitTest
 
     @Test
     public void testLeaderboardWriter(){
-        gameModel model = new gameModel(1,"a",5);
+        gameModel model = new gameModel(1,"a");
         model.setScore(1);
         model.setNewLeaderboardScore();
         model.setName("b");
@@ -53,6 +53,14 @@ public class ExampleUnitTest
         System.out.println("///////////////////////////////////");
 
 
+
+    }
+
+    @Test
+    public void testGameScreen(){
+
+        gameScreen g = new gameScreen();
+        g.openHintPopup();
 
     }
 }

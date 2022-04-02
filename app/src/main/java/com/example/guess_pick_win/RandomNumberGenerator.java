@@ -16,7 +16,7 @@ public class RandomNumberGenerator
     medium lvl -> 1 to 10
     hard lvl -> 1 to 15
     */
-    public void makeRandomNumber(){
+    public int makeRandomNumber(){
         gameModel difficulty = new gameModel();
         int num = difficulty.getDifficulty();
 
@@ -24,22 +24,27 @@ public class RandomNumberGenerator
 
             int min = 1, max = 5;
             this.ranNum = (int)(Math.random() * ((max - min + 1) + min));
+            return this.ranNum;
 
         } else if (num == 2) {
 
             int min = 1, max = 10;
             this.ranNum = (int)(Math.random() * ((max - min + 1) + min));
+            return this.ranNum;
 
         } else if (num == 3) {
 
             int min = 1, max = 10;
             this.ranNum = (int)(Math.random() * ((max - min + 1) + min));
+            return this.ranNum;
         }
-
+        else {
+            throw new IllegalArgumentException();
+        }
     }
 
-    public int getRanNum()
-    {
-        return this.ranNum;
-    }
+    //public int getRanNum()
+    //{
+   //     return this.ranNum;
+   // }
 }

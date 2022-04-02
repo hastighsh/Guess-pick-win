@@ -31,12 +31,11 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
-                //what is max???
-                int max = 0;
+
                 EditText playerName = (EditText) findViewById(R.id.nameBox);
                 String name = playerName.getText().toString();
                 openGameScreen();
-                gameModel diff = new gameModel(1, name, max);
+                gameModel diff = new gameModel(1, name);
             }
         });
 
@@ -45,12 +44,11 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
-                //what is max????
-                int max = 0;
+
                 EditText playerName = (EditText) findViewById(R.id.nameBox);
                 String name = playerName.getText().toString();
                 openGameScreen();
-                gameModel diff = new gameModel(2, name, max);
+                gameModel diff = new gameModel(2, name);
             }
         });
 
@@ -59,12 +57,11 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
-                //what is max???
-                int max = 0;
+
                 EditText playerName = (EditText) findViewById(R.id.nameBox);
                 String name = playerName.getText().toString();
                 openGameScreen();
-                gameModel diff = new gameModel(3, name, max);
+                gameModel diff = new gameModel(3, name);
             }
         });
     }

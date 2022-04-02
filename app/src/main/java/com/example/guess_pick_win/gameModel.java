@@ -6,9 +6,9 @@ import java.util.*;
 // the model of the project
 public class gameModel {
     private String name;
-    private int score, difficulty, lifeLeft, max, number;
+    private int score, difficulty, number;
     private final HashSet<Player> leaderboardList;
-    private int[] pastGuesses;
+    //private int[] pastGuesses;
 
     /*
      accepts an integer between 1-3.
@@ -17,42 +17,24 @@ public class gameModel {
     public gameModel(){
         this.difficulty= 0;
         this.name = "";
-        this.max = 0;
         this.score = 0;
         this.leaderboardList = new HashSet<>();
+
     }
 
-    public gameModel(int difficulty,String name,int max){
+    public gameModel(int difficulty,String name){
         this.difficulty=difficulty;
         this.name=name;
-        this.max=max;
         this.score=0;
         this.leaderboardList = new HashSet<>();
+
         //pastGuesses=new int[0];
-
-
-        if (difficulty==1){
-            this.lifeLeft=3;
-        }
-
-        else if (difficulty==2){
-            this.lifeLeft=2;
-        }
-
-        else if (difficulty==3){
-            this.lifeLeft=1;
-        }
-        else{
-            throw new IllegalArgumentException();
-        }
-
     }
 
 
     public void setDifficulty(int newDifficulty){
 
         if (newDifficulty>=1&&newDifficulty<=3){
-            this.lifeLeft+=this.difficulty-newDifficulty;
             this.difficulty=newDifficulty;
         }
         else{
@@ -61,12 +43,14 @@ public class gameModel {
 
     }
 
-    public void setMax(int newMax){
-        this.max=newMax;
-    }
 
     public void setName(String name){
         this.name=name;
+    }
+
+    public void setNumber(){
+        RandomNumberGenerator rnd = new RandomNumberGenerator();
+        this.number=rnd.makeRandomNumber();
     }
 
 
@@ -86,13 +70,10 @@ public class gameModel {
         return this.difficulty;
     }
 
-    public int getLifeLeft(){
-        return this.lifeLeft;
+    public int getNumber(){
+        return this.number;
     }
 
-    public int getMax(){
-        return this.max;
-    }
 
 
 
@@ -116,10 +97,10 @@ public class gameModel {
 
     }
 
-    //for test only
+    /*//for test only
     public void setScore(int score) {
         this.score = score;
     }
-    //////
+    *//////
 
 }
