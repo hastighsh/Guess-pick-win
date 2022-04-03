@@ -43,8 +43,8 @@ public class RandomNumberGenerator
         }
     }
 
-    //public int getRanNum()
-    //{
-   //     return this.ranNum;
-   // }
+    public int getRanNum()
+    {
+        return this.ranNum;
+    }
 }
