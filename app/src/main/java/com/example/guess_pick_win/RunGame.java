@@ -1,10 +1,16 @@
 package com.example.guess_pick_win;
 
-public class RunGame {
+class RunGame {
     private int score;
     private int highScore;
 
-    public  String compareAnswer(int ranNum, int inputNum){
+
+    public RunGame() {
+        this.score = 0;
+        this.highScore = 0;
+    }
+
+    public String compareAnswer(int ranNum, int inputNum){
         String result ="";
 
         if( ranNum == inputNum){

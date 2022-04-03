@@ -10,6 +10,7 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 
@@ -26,14 +27,16 @@ public class gameScreen extends AppCompatActivity {
         Intent b = new Intent(this, HintPopup.class);
         Intent intent = getIntent();
         Integer number = intent.getIntExtra("number", 120);
-        Log.i("hintActivity", "index=" + number);
-
-        b.putExtra("number", number);// saba
+        b.putExtra("number", number);
         startActivity(b);
     }
 
-    public void openAnnouncementPopup() {
+    public void openAnnouncementPopup(Integer guess) {
         Intent c = new Intent(this, AnnouncementPopup.class);
+        c.putExtra("guessNumber", guess);
+        Intent intent = getIntent();
+        Integer number = intent.getIntExtra("number", 120);
+        c.putExtra("number", number);
         startActivity(c);
     }
 
@@ -68,7 +71,11 @@ public class gameScreen extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                openAnnouncementPopup();
+                EditText guessNumText = (EditText) findViewById(R.id.inputA);
+                Integer guessNumber = Integer.valueOf(guessNumText.getText().toString());
+                Log.i("gameScreen", "guess num is "+guessNumber);
+
+                openAnnouncementPopup(guessNumber);
             }
         });
 

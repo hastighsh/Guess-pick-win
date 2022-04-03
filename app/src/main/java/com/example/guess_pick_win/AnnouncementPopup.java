@@ -1,5 +1,6 @@
 package com.example.guess_pick_win;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,10 +19,13 @@ public class AnnouncementPopup extends AppCompatActivity
 
         //finding value by public static variable
         TextView testView = findViewById(R.id.annoBox);
-        String result = Hint.hint(RandomNumberGenerator.ranNum);
+        RunGame run = new RunGame();
+        Intent intent = getIntent();
+        Integer number = intent.getIntExtra("number", 120);
+        Integer guess = intent.getIntExtra("guessNumber", 120);
+
+        String result = run.compareAnswer(number, guess);
         testView.setText(result);
-
-
         Button okBtn = (Button) findViewById(R.id.okBtn);
         okBtn.setOnClickListener(new View.OnClickListener()
         {
