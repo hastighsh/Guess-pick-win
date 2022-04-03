@@ -1,6 +1,5 @@
 package com.example.guess_pick_win;
 
-import java.io.*;
 import java.util.*;
 
 // the model of the project
@@ -48,9 +47,10 @@ public class gameModel {
         this.name=name;
     }
 
-    public void setNumber(){
+    public String setNumber(){
         RandomNumberGenerator rnd = new RandomNumberGenerator();
         this.number=rnd.makeRandomNumber();
+        return null;
     }
 
 

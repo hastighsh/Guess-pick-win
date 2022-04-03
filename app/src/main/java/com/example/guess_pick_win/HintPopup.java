@@ -18,11 +18,26 @@ public class HintPopup extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hint_popup);
 
-        String num = getIntent().getStringExtra("num"); // saba
-       String result = Hint.hint(num);// saba
+        TextView testView = findViewById(R.id.hintBox);
+        String result = Hint.hint(RandomNumberGenerator.ranNum);
+        testView.setText(result);
 
-        TextView testView = findViewById(R.id.hintBox); //saba
-        testView.setText(result);// saba
+
+        //Hasti----------
+//        gameModel ranNum = new gameModel();
+//        String result = Hint.hint(ranNum.setNumber());
+//
+//        TextView testView = findViewById(R.id.hintBox);
+//        testView.setText(result);
+        //Hasti----------
+
+        //saba-----------
+//        String num = getIntent().getStringExtra("num"); // saba
+//        String result = Hint.hint(num);// saba
+//
+//        TextView testView = findViewById(R.id.hintBox); //saba
+//        testView.setText(result);// saba
+        //saba------------
 
 
         Button okBtn = (Button) findViewById(R.id.okBtn);

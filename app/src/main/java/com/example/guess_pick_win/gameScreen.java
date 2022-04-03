@@ -21,10 +21,9 @@ public class gameScreen extends AppCompatActivity {
     }
 
     public void openHintPopup() {
+        int ranNum = RandomNumberGenerator.ranNum;
         Intent b = new Intent(this, HintPopup.class);
-
-
-       b.putExtra("num", 10);// saba
+        //b.putExtra("num", 10);// saba
         startActivity(b);
     }
 

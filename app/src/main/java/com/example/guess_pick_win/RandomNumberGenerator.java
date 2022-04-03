@@ -3,12 +3,12 @@ package com.example.guess_pick_win;
 public class RandomNumberGenerator
 {
 
-    public int ranNum;
+    public static int ranNum;
 
 
 
     public RandomNumberGenerator(){
-        this.ranNum = 0;
+        ranNum = 0;
     }
 
     /*generating random number based on the selected difficulty level
@@ -23,20 +23,20 @@ public class RandomNumberGenerator
         if (num == 1){
 
             int min = 1, max = 5;
-            this.ranNum = (int)(Math.random() * ((max - min + 1) + min));
-            return this.ranNum;
+            ranNum = (int)(Math.random() * ((max - min + 1) + min));
+            return ranNum;
 
         } else if (num == 2) {
 
             int min = 1, max = 10;
-            this.ranNum = (int)(Math.random() * ((max - min + 1) + min));
-            return this.ranNum;
+            ranNum = (int)(Math.random() * ((max - min + 1) + min));
+            return ranNum;
 
         } else if (num == 3) {
 
             int min = 1, max = 10;
-            this.ranNum = (int)(Math.random() * ((max - min + 1) + min));
-            return this.ranNum;
+            ranNum = (int)(Math.random() * ((max - min + 1) + min));
+            return ranNum;
         }
         else {
             throw new IllegalArgumentException();

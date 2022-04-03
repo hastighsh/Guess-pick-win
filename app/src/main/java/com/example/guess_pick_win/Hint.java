@@ -4,9 +4,9 @@ import java.util.Random;
 
 public class Hint {
 
-    public static String hint (String num){
+    public static String hint (int num){
         String result = "";
-     if (Integer.parseInt(num) % 2 == 0) {
+     if (Integer.parseInt(String.valueOf(num)) % 2 == 0) {
         result = "The preferred number is even.";
     }
         else {
