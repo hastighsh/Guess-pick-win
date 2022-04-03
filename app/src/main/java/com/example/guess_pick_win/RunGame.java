@@ -23,11 +23,11 @@ public class RunGame {
         return this.score;
     }
 
-    public void compareScore(){
+    public void compareScore( int num){
 
-//        //if(this.score > Player.getScore()){
-//            this.highScore = this.score;
-//        }
+        if(this.score > num ){
+            this.highScore = this.score;
+        }
 
     }
 }

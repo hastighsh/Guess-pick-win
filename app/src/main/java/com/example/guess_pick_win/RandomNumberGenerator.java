@@ -1,7 +1,5 @@
 package com.example.guess_pick_win;
 
-import android.os.TestLooperManager;
-
 public class RandomNumberGenerator
 {
 
@@ -47,8 +45,6 @@ public class RandomNumberGenerator
 
     public int getRanNum()
     {
-        return ranNum;
+        return this.ranNum;
     }
-
-
 }

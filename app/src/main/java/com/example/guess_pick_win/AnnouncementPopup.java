@@ -22,13 +22,6 @@ public class AnnouncementPopup extends AppCompatActivity
         testView.setText(result);
 
 
-
-
-
-
-
-
-
         Button okBtn = (Button) findViewById(R.id.okBtn);
         okBtn.setOnClickListener(new View.OnClickListener()
         {
