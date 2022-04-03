@@ -10,6 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import org.w3c.dom.Text;
 
+import java.util.Random;
+
 public class HintPopup extends AppCompatActivity
 {
     @Override
@@ -19,6 +21,8 @@ public class HintPopup extends AppCompatActivity
         setContentView(R.layout.hint_popup);
 
         TextView testView = findViewById(R.id.hintBox);
+        //gameModel g = new gameModel();
+        //int num = new RandomNumberGenerator().makeRandomNumber();
         String result = Hint.hint(RandomNumberGenerator.ranNum);
         testView.setText(result);
 

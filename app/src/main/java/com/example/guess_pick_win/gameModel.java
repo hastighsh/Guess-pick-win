@@ -5,7 +5,8 @@ import java.util.*;
 // the model of the project
 public class gameModel {
     private String name;
-    private int score, difficulty, number;
+    private int score, difficulty;
+    private static int number;
     private final HashSet<Player> leaderboardList;
     //private int[] pastGuesses;
 
