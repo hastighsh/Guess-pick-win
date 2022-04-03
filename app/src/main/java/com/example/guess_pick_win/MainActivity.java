@@ -10,8 +10,10 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity
 {
+    public gameModel model;
     public void openGameScreen(){
         Intent intent = new Intent(this, gameScreen.class);
+        intent.putExtra("number", model.getNumber());
         startActivity(intent);
     }
 
@@ -34,8 +36,9 @@ public class MainActivity extends AppCompatActivity
 
                 EditText playerName = (EditText) findViewById(R.id.nameBox);
                 String name = playerName.getText().toString();
+                model = new gameModel(1, name);
+                model.setNumber();
                 openGameScreen();
-                gameModel diff = new gameModel(1, name);
             }
         });
 
@@ -47,8 +50,9 @@ public class MainActivity extends AppCompatActivity
 
                 EditText playerName = (EditText) findViewById(R.id.nameBox);
                 String name = playerName.getText().toString();
+                model = new gameModel(2, name);
+                model.setNumber();
                 openGameScreen();
-                gameModel diff = new gameModel(2, name);
             }
         });
 
@@ -60,8 +64,9 @@ public class MainActivity extends AppCompatActivity
 
                 EditText playerName = (EditText) findViewById(R.id.nameBox);
                 String name = playerName.getText().toString();
+                model = new gameModel(3, name);
+                model.setNumber();
                 openGameScreen();
-                gameModel diff = new gameModel(3, name);
             }
         });
     }

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,9 +22,13 @@ public class gameScreen extends AppCompatActivity {
     }
 
     public void openHintPopup() {
-        int ranNum = RandomNumberGenerator.ranNum;
+//        int ranNum = RandomNumberGenerator.ranNum;
         Intent b = new Intent(this, HintPopup.class);
-        //b.putExtra("num", 10);// saba
+        Intent intent = getIntent();
+        Integer number = intent.getIntExtra("number", 120);
+        Log.i("hintActivity", "index=" + number);
+
+        b.putExtra("number", number);// saba
         startActivity(b);
     }
 

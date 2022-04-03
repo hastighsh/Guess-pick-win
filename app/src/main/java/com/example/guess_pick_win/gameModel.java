@@ -6,7 +6,7 @@ import java.util.*;
 public class gameModel {
     private String name;
     private int score, difficulty;
-    private static int number;
+    private int number;
     private final HashSet<Player> leaderboardList;
     //private int[] pastGuesses;
 
@@ -15,7 +15,7 @@ public class gameModel {
      1=easy, 2=medium, 3=hard
      */
     public gameModel(){
-        this.difficulty= 0;
+        this.difficulty= 1;
         this.name = "";
         this.score = 0;
         this.leaderboardList = new HashSet<>();
@@ -48,10 +48,9 @@ public class gameModel {
         this.name=name;
     }
 
-    public String setNumber(){
+    public void setNumber(){
         RandomNumberGenerator rnd = new RandomNumberGenerator();
-        this.number=rnd.makeRandomNumber();
-        return null;
+        this.number = rnd.makeRandomNumber(this.difficulty);
     }
 
 

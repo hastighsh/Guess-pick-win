@@ -1,9 +1,11 @@
 package com.example.guess_pick_win;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.content.Intent;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,7 +25,11 @@ public class HintPopup extends AppCompatActivity
         TextView testView = findViewById(R.id.hintBox);
         //gameModel g = new gameModel();
         //int num = new RandomNumberGenerator().makeRandomNumber();
-        String result = Hint.hint(RandomNumberGenerator.ranNum);
+        Intent intent = getIntent();
+        Integer number = intent.getIntExtra("number", 150);
+
+        Log.i("hintActivity", "index=" + number);
+        String result = Hint.hint(number);
         testView.setText(result);
 
 
