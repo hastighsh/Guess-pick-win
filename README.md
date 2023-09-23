@@ -1,20 +1,3 @@
-# Guess-pick-win!
-### Team name: Code for Good
-
-
-## Members of the team:
-
-1.	Hasti Ghaneshirazi, hastigh@my.yorku.ca, Section N, Lab03.
-
-2.	Helena Kamali, Helenakm@my.yorku.ca, Section M, Lab03.
-
-3.	Saba Yazdani, sabayzdn@my.yorku.ca, Section M, Lab03.
-
-4.	Mohammadmahdi Forouzan, mahdif@my.yorku.ca, Section M, Lab03
-
-
-
-
 ## Project name: Guess, pick, win!
 
 ### Short description: 
@@ -47,10 +30,7 @@ In this project, the computer picks a random number in a specified set of intege
 
 ## Wireframe 
 
-![Wireframe](/wireframe.jpg)![Screenshot (218)](https://user-images.githubusercontent.com/92185732/154775516-4bf5aa3b-36ee-4594-a61f-420d78e6fdb0.png)
-![Screenshot (217)](https://user-images.githubusercontent.com/92185732/154775531-e05f24b5-44fc-47fd-9040-234a56418cab.png)
-![Screenshot (220)](https://user-images.githubusercontent.com/92185732/154775573-381f2363-f70e-418f-af59-80994224bace.png)
-![WhatsApp Image 2022-02-18 at 1 47 05 PM](https://user-images.githubusercontent.com/92185732/154775715-5aa70285-a946-40c7-87bd-c01327ad1a3c.jpeg)
+![Screenshot (218)](https://user-images.githubusercontent.com/92185732/154775516-4bf5aa3b-36ee-4594-a61f-420d78e6fdb0.png)
 
 Thechnologies that been used: 
 
